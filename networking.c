@@ -7,7 +7,7 @@ int client_tcp_handshake(char * server_address) {
 
   //getaddrinfo
   
-  int serverd;
+  int serverd;//store the socket descriptor here
   //create the socket
   
   //connect to the server
@@ -37,7 +37,8 @@ int server_setup() {
   //setup structs for getaddrinfo
   
   //create the socket
-  
+  int clientd;//store the socket descriptor here
+	
   //this code should get around the address in use error
   int yes = 1;
   int sockOpt =  setsockopt(clientd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes));
