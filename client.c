@@ -1,4 +1,4 @@
-#include "networking.c"
+#include "networking.h"
 
 void clientLogic(int server_socket){
 
